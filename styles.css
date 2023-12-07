@@ -173,7 +173,7 @@ nav {
     .container {
         flex-direction: column;
     }
-
+    
     .vertical-line {
         height: 30px;
     }
@@ -187,12 +187,21 @@ nav {
     /* Index */
     .firstSection {
         flex-direction: column-reverse;
+        margin: 30px 0;
     }
 
     .leftSection {
         font-size: 1.6rem;
     }
+    .firstSection>div {
+        width: 85%;
+    }
+    .rightSection {
+        display: contents;
+        width: max-content;
+    }
 }
+
 
 body {
     padding: 0px;
@@ -222,11 +231,6 @@ footer {
 
 /* For Left n Right Sections */
 @media screen and (min-width: 640px) {
-    .firstSection {
-        width: fit-content;
-        margin: 30px 0;
-        
-    }
     main.con {
         .sec {
             display: flex;
