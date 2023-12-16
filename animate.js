@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     try {
         var typed = new Typed('#element', {
-            strings: ['App Developer', 'Website Developer', 'Game Developer'],
-            typeSpeed: 50,
+            strings: ['App Developer;', 'Website Developer;', 'Game Developer;'],
+            typeSpeed: 30,
             loop:true
         });
     } catch (error) { }
