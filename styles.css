@@ -4,37 +4,59 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 26vh 2vw;
+    padding: 24vh 2vw;
     background-color: #000;
     color: #fff;
     margin: 2vh 2vw;
 }
+
 .firstSection>div {
-    width: 30%;
+    width: 45%;
 }
+
 .leftSection {
     font-size: 2.2rem;
     /* font-size: 3rem; */
 }
+
 .rightSection img {
     width: 100%;
 }
+
 .purple {
     color: blue
 }
+
 .homecarousel {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    button,
-    h5,
-    p {
+
+    button{
         filter: invert(1);
     }
 }
+
+
+/* Image for carousel for mobile */
+@media (max-width: 767px) { 
+    
+    .carousel-item img.mobile {
+        display: block !important;
+    }
+}
+.carousel-item img.mobile {
+    display: none !important;
+}
+
+.outline {
+    margin: 0 0.8vw;
+    background-color: #000000;
+}
+
 .cs50 {
-    margin: -2.5px 0;
+    margin: -2.7px 0;
     padding: 0;
     box-shadow: none;
     color: lavender;
@@ -48,6 +70,8 @@
     height: 100vh;
     /* width: 100vw; */
 }
+
+/* Magic button to scroll down to CS50 */
 .scroll-button {
     display: inline-flex;
     margin: 20px;
@@ -57,7 +81,6 @@
     font-size: 1rem;
     font: initial;
     border-radius: 50%;
-
 }
 
 /* Navbar */
@@ -70,7 +93,7 @@ button {
     color: black;
 }
 
-/* Journey */
+/* My Journey Page */
 #blink {
     transition: 1.5s;
 }
@@ -114,7 +137,7 @@ button {
     align-items: center;
 }
 
-
+/* For Mobiles */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -133,11 +156,15 @@ button {
     /* Index */
     .firstSection {
         flex-direction: column-reverse;
-        margin: 30px 0;
+        margin: 1vh 2vw;
+        padding: 16vh 10vw;
+        /* min-height: 110vh; */
+        /* max-height: 130vh; */
     }
 
     .leftSection {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        margin-top: 15vh;
     }
 
     .firstSection>div {
@@ -160,7 +187,7 @@ body {
     min-height: 100vh;
 }
 
-main{
+main {
     flex-grow: 1;
 }
 
@@ -192,6 +219,43 @@ footer {
     border-top: 2px solid #355071;
     background-color: #999;
     padding: 20px;
+}
+
+/* Projects Page */
+.projectsec1 {
+    filter: invert(1);
+    /* padding: 2vh 2vw; */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img {
+        filter: invert(1);
+    }
+    /* .carousel{
+        max-height: 50vh;
+    } */
+}
+.projectsec2 {
+    background-color: #000;
+    color: #fff;
+    /* filter: invert(1);
+    img {
+        filter: invert(1);
+    } */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.carouselProjects {
+    margin: 2vh 2vw;
+    max-width: 100vh;
+    /* img {
+        filter: invert(0);
+    } */
 }
 
 /* Contact Page */
@@ -229,8 +293,9 @@ footer {
     }
 }
 
-.social{
+.social {
     padding: 0;
+
     li {
         display: flex;
         margin: 20px 0px;
