@@ -118,6 +118,7 @@ button {
     width: 40vw;
     margin-left: 0;
     margin-right: 10px;
+    justify-content: space-between;
 }
 
 .horizontal-line p {
