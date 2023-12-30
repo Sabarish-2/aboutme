@@ -43,8 +43,8 @@
 .carousel-item img.mobile {
     display: none !important;
 }
-@media (max-width: 767px) { 
-    
+@media (max-width: 767px) {
+
     .carousel-item img.mobile {
         display: block !important;
     }
@@ -56,7 +56,7 @@
 }
 
 .cs50 {
-    margin: -4px 0;
+    margin: -3.5px 0;
     padding: 0;
     box-shadow: none;
     color: lavender;
@@ -67,7 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 101vh;
     /* width: 100vw; */
 }
 
@@ -211,6 +211,9 @@ h3 {
 a {
     text-decoration: none;
     color: black;
+}
+img {
+    color:#abc;
 }
 
 /* Footer Design */
