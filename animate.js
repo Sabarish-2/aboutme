@@ -14,6 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
             loop:true
         });
     } catch (error) { }
-
-
 });

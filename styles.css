@@ -1,6 +1,5 @@
 /* Index */
 .firstSection {
-    /* filter: invert(1); */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,7 +15,6 @@
 
 .leftSection {
     font-size: 2.2rem;
-    /* font-size: 3rem; */
 }
 
 .rightSection img {
@@ -32,19 +30,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    h5,p,button{
-        filter: invert(1);
-    }
 }
+
+.homecarousel h5,
+.homecarousel p,
+.homecarousel button {
+    filter: invert(1);
+}
+
 
 
 /* Image for carousel for mobile */
 .carousel-item img.mobile {
     display: none !important;
 }
-@media (max-width: 767px) {
 
+@media (max-width: 767px) {
     .carousel-item img.mobile {
         display: block !important;
     }
@@ -63,12 +64,10 @@
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8.7vw;
-    /* font-size: 9em; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 101vh;
-    /* width: 100vw; */
 }
 
 /* Magic button to scroll down to CS50 */
@@ -159,8 +158,6 @@ button {
         flex-direction: column-reverse;
         margin: 1vh 2vw;
         padding: 16vh 10vw;
-        /* min-height: 110vh; */
-        /* max-height: 130vh; */
     }
 
     .leftSection {
@@ -213,8 +210,9 @@ a {
     text-decoration: none;
     color: black;
 }
+
 img {
-    color:#abc;
+    color: #abc;
 }
 
 /* Footer Design */
@@ -228,38 +226,30 @@ footer {
 /* Projects Page */
 .projectsec1 {
     filter: invert(1);
-    /* padding: 2vh 2vw; */
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    img {
-        filter: invert(1);
-    }
-    /* .carousel{
-        max-height: 50vh;
-    } */
 }
+
+.projectsec1 img {
+    filter: invert(1);
+}
+
+
 .projectsec2 {
     background-color: #000;
     color: #fff;
-    /* filter: invert(1);
-    img {
-        filter: invert(1);
-    } */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
+
 .carouselProjects {
     margin: 2vh 2vw;
     max-width: 100vh;
-    /* img {
-        filter: invert(0);
-    } */
 }
 
 /* Contact Page */
@@ -267,31 +257,30 @@ footer {
 @media screen and (min-width: 640px) {
 
     /* For PCs to have 2 sections */
-    main.con {
-        .sec {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .right {
-            margin: 0 20px;
-            /* padding-left: 10vw; */
-        }
-
-        .left {
-            margin: 0 20px
-        }
+    main.con.sec {
+        display: flex;
+        justify-content: space-evenly;
     }
-}
 
+    main.con.right {
+        margin: 0 20px;
+    }
+
+    main.con.left {
+        margin: 0 20px
+    }
+
+}
 
 
 .sec {
     justify-content: center;
     display: flex;
     padding: 14vh 17vw;
+}
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
+    .sec {
         flex-direction: column;
         padding: 3vh 4vw;
     }
@@ -299,12 +288,12 @@ footer {
 
 .social {
     padding: 0;
+}
 
-    li {
-        display: flex;
-        margin: 20px 0px;
-        list-style: none;
-    }
+.social li {
+    display: flex;
+    margin: 20px 0px;
+    list-style: none;
 }
 
 a ion-icon {
