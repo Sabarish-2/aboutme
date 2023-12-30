@@ -27,6 +27,7 @@
 
 .homecarousel {
     display: flex;
+    padding-bottom: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
